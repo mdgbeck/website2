@@ -11,7 +11,7 @@ googleAnalytics = "UA-123-45"
 disqusShortname = "localhost"
 
 [params]
-	subtitle = "Michael Groesbeck's website""
+	subtitle = "Michael Groesbeck's website"
 	# Number of posts to show in recent posts list.
 	recentPostsCount = 10
 	# Content types which are excluded from recent posts and archive page.
