@@ -8,7 +8,7 @@ disqusShortname         = "mdgbeck-netlify-com"
 googleAnalytics         = "UA-99583063-1"
 pluralizeListTitles     = false
 disableLanguages        = [""]
-ignoreFiles             = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "year_tab.html", "\content\post\year_tab.html"]
+ignoreFiles             = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "year_tab.html"]
 
 [params]
   # Loads CSS and JavaScript files. The variable is an array so that you can load
