@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://mdgsports.netlify.com/"
 languageCode = "en-us"
-title = "Ezhil"
+title = "mdgbeck"
 theme = "ezhil"
 
 pygmentsstyle = "vs"
@@ -11,7 +11,7 @@ googleAnalytics = "UA-123-45"
 disqusShortname = "localhost"
 
 [params]
-	subtitle = "Clean and minimal personal [blog theme for Hugo](https://github.com/vividvilla/ezhil)"
+	subtitle = "Michael Groesbeck's website""
 	# Number of posts to show in recent posts list.
 	recentPostsCount = 10
 	# Content types which are excluded from recent posts and archive page.
@@ -42,12 +42,12 @@ weight = 4
 [[params.social]]
 name = "Github"
 icon = "github"
-url = "https://github.com/vividvilla/ezhil"
+url = "https://github.com/mdgbeck"
 
 [[params.social]]
 name = "Twitter"
 icon = "twitter"
-url = "https://twitter.com/gohugoio"
+url = "https://twitter.com/mdgbeck"
 
 [[params.social]]
 name = "RSS"
