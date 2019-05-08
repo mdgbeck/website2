@@ -7,8 +7,8 @@ pygmentsstyle = "vs"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-googleAnalytics = "UA-123-45"
-disqusShortname = "localhost"
+googleAnalytics = "UA-99583063-1"
+disqusShortname = "mdgbeck-netlify-com"
 
 [params]
 	subtitle = "Michael Groesbeck's website"
