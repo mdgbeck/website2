@@ -178,14 +178,18 @@ ul {
 .header h2 {
     margin: 0;
     padding: 0;
-    font-size: 2rem;
+    font-size: 1.1252rem;
     line-height: 1.3em;
     position: relative;
     left: 10px;
 }
 
-.header h2 {
-    font-size: 1.125rem;
+/* this is where I am adding header image style? */
+.header img {
+  float: left;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
 }
 
 .header nav {
