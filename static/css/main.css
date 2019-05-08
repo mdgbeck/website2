@@ -170,18 +170,12 @@ ul {
 	padding-bottom: 20px;
 }
 
-.header h1 {
-  position: relative;
-  top: 20px;
-  left: 10px;
-}
+.header h1,
 .header h2 {
     margin: 0;
     padding: 0;
     font-size: 2rem;
     line-height: 1.3em;
-    position: relative;
-    left: 10px;
 }
 
 .header h2 {
@@ -224,14 +218,6 @@ ul {
 
 .header .site-description nav ul svg {
 	max-height: 15px;
-}
-
-/* this is where I am adding header image style? */
-.header img {
-  float: left;
-  width: 20%;
-  height: 20%;
-  border-radius: 50%;
 }
 
 .section .section-header {
