@@ -6,6 +6,10 @@
 	<div class="container wrapper list">
 		{{ partial "head.html" . }}
 
+    {{- with .Site.Params.Social -}}
+    <script>feather.replace()</script>
+    {{- end -}}
+
 		{{ if isset .Data "Term" }}
 			<h1>Entries tagged - "{{.Data.Term}}"</h1>
 		{{ else }}

@@ -13,6 +13,10 @@
 		<div class="markdown">
 			{{ .Content }}
 		</div>
+		
+		{{- with .Site.Params.Social -}}
+    <script>feather.replace()</script>
+    {{- end -}}
 
 		{{- $.Scratch.Set "isDisqus" true -}}
 

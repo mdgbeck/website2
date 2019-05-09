@@ -5,6 +5,10 @@
 <body>
 	<div class="container wrapper tags">
 		{{ partial "head.html" . }}
+		
+		{{- with .Site.Params.Social -}}
+    <script>feather.replace()</script>
+    {{- end -}}
 
 		<h1 class="page-title">All tags</h1>
 
