@@ -10,6 +10,8 @@ pygmentscodefencesguesssyntax = true
 googleAnalytics = "UA-99583063-1"
 disqusShortname = "mdgbeck-netlify-com"
 
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
 [params]
 	subtitle = "Michael Groesbeck's website"
 	# Number of posts to show in recent posts list.
