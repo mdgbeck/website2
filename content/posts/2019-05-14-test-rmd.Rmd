@@ -14,7 +14,7 @@ knitr::opts_chunk$set(message = FALSE, warnings = FALSE)
 
 There should be a table below this.
 
-```{r, echo=FALSE}
+```{r}
 library(tidyverse)
 library(DT)
 library(widgetframe)
@@ -26,10 +26,22 @@ ggplot(diamonds, aes(x = carat, y = price)) +
 ```
 
 
-There should be a graph above this, and an html table below
+There should be a graph above this, and an html table below and `library(tidyverse)` should be different.
 
 
 ```{r}
+
+# code comment
+
+# another code comment
+
+# want to test color change in code boxes
+
+1 + 1
+
+library(DT)
+
+
 datatable(iris)
 ```
 

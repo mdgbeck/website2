@@ -152,6 +152,16 @@ ul {
 	background-color: #FAFAFA !important;
 }
 
+pre {
+  border: 1px solid #ddd;
+  font-size: .8rem;
+  padding: 1em;
+  overflow-x: auto;
+  background: #f9f9f9;
+}
+
+code { background: #f9f9f9; }
+
 .highlight {
     background: 0 0
 }
