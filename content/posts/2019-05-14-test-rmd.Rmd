@@ -5,6 +5,7 @@ date: '2019-05-14'
 slug: test_123
 categories: []
 tags: []
+description: 'this is a test description'
 ---
 
 ```{r, include=FALSE}
@@ -25,4 +26,10 @@ ggplot(diamonds, aes(x = carat, y = price)) +
 ```
 
 
-There should be a graph above this
+There should be a graph above this, and an html table below
+
+
+```{r}
+datatable(iris)
+```
+
