@@ -1,0 +1,28 @@
+---
+title: Test Rmd
+author: Michael Groesbeck
+date: '2019-05-14'
+slug: test_123
+categories: []
+tags: []
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warnings = FALSE)
+```
+
+There should be a table below this.
+
+```{r, echo=FALSE}
+library(tidyverse)
+library(DT)
+library(widgetframe)
+library(mdgr)
+
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point(aes(color = color)) +
+  theme_mdgr()
+```
+
+
+There should be a graph above this

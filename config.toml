@@ -21,6 +21,10 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 	disableDisqusTypes = ["page"]
 	featherIconsCDN = true
 
+
+[permalinks]
+  posts = "/blog/:slug/"
+
 [[menu.main]]
 name = "Home"
 url = "/"
