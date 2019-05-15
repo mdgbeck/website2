@@ -1,11 +1,13 @@
 +++
 title = "About"
-date = "2017-03-01"
+date = "2019-05-15"
 +++
 
 ## About Me
 
-I am currently working as Head of Reporting and Analytics at [ActiveCare](http://www.activecare.com/), where I've been since June 2016. There I lead a small team handling reports for our customers, do business analytics, as well as internal research using medical data. I primarly do analyses using R, and use SQL Server Reporting Services (SSRS) for our external reports. I received a Bachelor's of Science in Statistics from Brigham Young University in April 2016. 
+I am currently doing contract work for a large financial institution as a data analyst with their treasury data team. Prior to that, I worked at [ActiveCare](https://www.activecare.com/), where I led the Reporting and Analytics team. My work has mainly consisted of using SQL and R to prepare and automate reports and various analyses. 
+
+I received a Bachelor's of Science in Statistics from Brigham Young University in April 2016. While I was a student there, I worked as a research assistant where I co-authored two papers about academic librarians.
 
 ## Publications
 
@@ -15,15 +17,17 @@ I am currently working as Head of Reporting and Analytics at [ActiveCare](http:/
 
 ## Website
 
-This site is built with Hugo, using the theme [Future Imperfect](http://themes.gohugo.io/future-imperfect/) ported by [Julio Pescador](https://github.com/jpescador). I created and manage the site using [Yihui Xie's](https://yihui.name/) R package [`blogdown`](https://bookdown.org/yihui/blogdown/).
+This site is built with Hugo, and uses a customized version [Ezhil theme.] 
+(https://github.com/vividvilla/ezhil)
+I created and manage the site using the R package [`blogdown`](https://bookdown.org/yihui/blogdown/).
 
-All the posts, and files for the website can be found in my [website repo](https://github.com/mdgbeck/website) on GitHub.
+All the posts, and files for the website can be found in my [website repo](https://github.com/mdgbeck/website2) on GitHub.
 
 Posts are released under [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## Other
 
-My interests include data analytics, photography, basketball, and soccer. I currently live in Matthews, NC with my wife and our two dogs.
+My interests include data analytics, photography, basketball, and soccer. I currently live in Charlotte, NC with my wife, daughter, and our two dogs.
 
 <img src="/img/about/theo.jpg" alt="Theo" width="600">
 
