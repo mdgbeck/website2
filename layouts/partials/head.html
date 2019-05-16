@@ -1,6 +1,6 @@
 <div class="header">
   <a href=/><img src="img/head_shot.jpg" alt="logo"></a>
-	<h1 class="site-title">{{ .Site.Title }}</h1>
+	<h1 class="site-title"><a href={{ .Site.BaseURL }} style="text-decoration:none;">{{ .Site.Title }}</a></h1>
 	<div class="site-description">
 		{{- if isset .Site.Params "subtitle" -}}
 		<h2>{{ .Site.Params.Subtitle | markdownify }}</h2>
