@@ -146,13 +146,14 @@ year_tab <- by_year %>%
             `Rookie WS` = WS,
             `Total WS` = TotalWS,
             `Percent WS` = round(Perc_WS, 3),
-            `Total WS`) %>% 
-  datatable(rownames=FALSE, width=800, height=400)
-
-year_tab
+            `Total WS`)
 
 ```
 
+```{r, echo=FALSE}
+
+datatable(year_tab, rownames = FALSE)
+```
 
 As we might expect, the percent of total win shares and percent of total minutes each year are highly correlated with each other (*r* = 0.87). I do not think this is a problem, as the question asked was about initial contribution not the talent of the rookies. Whether we consider minutes played or win shares a better measure of impact, both suggest that the 2014 draft may have been the least immediately impactful. 
 

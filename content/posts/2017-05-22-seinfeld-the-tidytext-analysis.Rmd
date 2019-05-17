@@ -381,7 +381,7 @@ top_episodes <- episode_words %>%
 ```{r, echo=FALSE}
 library(DT)
 
-datatable(top_episodes, rownames=FALSE)
+datatable(top_episodes, rownames = FALSE)
 
 ```
 
