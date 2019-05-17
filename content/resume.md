@@ -5,8 +5,15 @@ date = "2019-05-16"
 
 ## Work Experience
 
-**Head of Reporting and Analytics**, [ActiveCare](http://www.activecare.com/)  
-June 2016 - Present
+**Data Consultant**,
+Contracting through [Signature Consultants](https://www.sigconsult.com/) at [Bank of America](https://www.bankofamerica.com/)
+June 2018 - Present
+
+- Bullet 1
+- Bullet 2
+
+**Head of Reporting and Analytics**, [ActiveCare](https://www.activecare.com/)  
+June 2016 - June 2018
   
   - Managed small team in charge of company reports, dashboard, and various data projects
   - Created and presented business intelligence analyses for company management
@@ -22,7 +29,7 @@ April 2015 - June 2016
   - Co-author on two [published research papers](http://crl.acrl.org/index.php/crl/article/view/16639/18085), and contributer on other papers nearing completion
   - Cleaned and analyzed large data set using a variety of statistical methods
   - Prepared thorough customized reports for 45 of the largest academic libraries in North America
-  - Promoted from student research assistant to current position
+  - Promoted from student research assistant to end position
   
 ## Education
 
@@ -31,14 +38,12 @@ April 2015 - June 2016
 
   - **Emphasis:** Statistical Sciences**
   - **Minors:** Mathematics, Business Management
-  - **GPA:** 3.44 / 4.0
-  - **Relevant Courses:** Bayesian Reliability, Applied R Programming, Theory of Analysis, Regression, Quality Control and Industrial Statistics, Communication of Statistical Results
+  - **GPA:** 3.42 / 4.0
+  - **Relevant Courses:** Bayesian Reliability, Theory of Analysis, Regression, Quality Control and Industrial Statistics, Communication of Statistical Results
   
 
 ## Skills and Achievements
 
-**Software:** R, SQL, Python (basic), C++ (basic)  
-**Tools:** Git, LaTeX, Linux, SalesForce  
-**Skills:** Web scraping, text mining, data visualization, machine learning, statistical modeling, communication to technical / general audiences  
+**Software:** SQL, R, Python, Git, Linux, SalesForce  
+**Skills:** Database design, web scraping, text mining, data visualization, machine learning, statistical modeling, communication to technical / general audiences  
 **Scholarships / Awards:** Academic achievement scholarship at BYU, Undergraduate recognition award in mathematics  
-**Other:** Fluent in Tagalog (Filipino)
