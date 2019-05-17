@@ -6,7 +6,7 @@ date = "2019-05-16"
 ## Work Experience
 
 **Data Consultant**,
-Contracting through [Signature Consultants](https://www.sigconsult.com/) at [Bank of America](https://www.bankofamerica.com/)
+Contracting through [Signature Consultants](https://www.sigconsult.com/) at [Bank of America](https://www.bankofamerica.com/)  
 June 2018 - Present
 
 - Bullet 1
