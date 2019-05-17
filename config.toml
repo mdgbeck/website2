@@ -1,4 +1,4 @@
-baseURL = "https://mdgbeck.com/"
+baseURL = "http://mdgbeck.com/"
 languageCode = "en-us"
 title = "mdgbeck"
 theme = "ezhil"
