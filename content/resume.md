@@ -9,8 +9,11 @@ date = "2019-05-16"
 Contracting through [Signature Consultants](https://www.sigconsult.com/) at [Bank of America](https://www.bankofamerica.com/)  
 June 2018 - Present
 
-- Bullet 1
-- Bullet 2
+- Member of cross product initiatives team within Treasury Data Management
+- Working knowledge of the large scope of data within SALM
+- Identified key business elements within data warehouse and managed controls to ensure data accuracy
+- Coordinated business partners' needs with technology team to develop optimal solutions 
+- Automated various BAU reports using Oracle SQL tools 
 
 **Head of Reporting and Analytics**, [ActiveCare](https://www.activecare.com/)  
 June 2016 - June 2018
@@ -18,8 +21,7 @@ June 2016 - June 2018
   - Managed small team in charge of company reports, dashboard, and various data projects
   - Created and presented business intelligence analyses for company management
   - Ran internal research on medical and pharmacy claims using statistical modeling / machine learning
-  - Developed internal R package
-  - Automated regular external reports using SSRS
+  - Built automated reports with SSRS 
   - One of companies SalesForce administrators
 
 **Statistician / Data Analyst** [Brigham Young University Harold B. Lee Library](https://lib.byu.edu/)  
