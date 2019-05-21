@@ -1,0 +1,107 @@
+---
+title: 'Using Python in RStudio to Visualize MLB Home Run Rates'
+author: Michael Groesbeck
+date: '2019-05-20'
+slug: using-python-in-rstudio
+categories: []
+tags:
+  - python
+  - pipenv
+  - rstats
+  - r
+  - baseball
+  - mlb
+description: 'A quick visualization of HR rates in Major League Baseball from 2010 - 2019. Details how to setup RStudio to use Python and saved virtual python environments.'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE, warnings=FALSE)
+library(tidyverse)
+library(reticulate)
+library(mdgr)
+use_virtualenv(virtualenv_list()[1])
+
+```
+
+RStudio version 1.2 comes with built in support for python using the [reticulate package](https://rstudio.github.io/reticulate/). This is a quick write up of my set up process in Ubuntu, as well as a simple visualization of MLB batting data using R and Python in the same notebook.
+
+
+## Setting up the virtual environment
+I have been using [Pipenv](https://pipenv.readthedocs.io/en/latest/#) for managing my python packages and virtual environments, and the [reticulate documentation](https://rstudio.github.io/reticulate/articles/python_packages.html) includes instructions on how to use previously save environments within RStudio. The `reticulate::virtualenv_list()` lists all virtual environments saved in a specific location. By default, it looks in `~/.virtualenvs`, but this behavior can be changed by defining the system environment variable `WORKON_HOME` as any other file location. In Ubuntu, I found the easiest way to do this was adding the variable to my /etc/environment file, then logging out and back in. Once I did this, running the `reticulate::virtualenv_list()` command displayed my saved environments. I then specified which to use with the function `reticulate::use_virtualenv()`. After this, I could now import the various python packages installed in that environment. And if I need to install additional packages, I can use the Terminal pane and quickly install packages with pipenv.
+
+## Using Python
+With the environment setup, we can now use the [pybaseball package](https://github.com/jldbc/pybaseball) to pull 10 seasons of batting data from [baseball-reference.com](https://www.baseball-reference.com/). 
+
+```{python, eval=FALSE}
+import pandas as pd
+from pybaseball import batting_stats_bref
+
+def get_batting(year):
+    df = batting_stats_bref(year)
+    df['year'] = year
+    return df
+
+df = pd.concat([get_batting(year) for year in range(2010, 2020)], ignore_index=True)
+
+```
+
+We can then reference the data in R with the following code. Note, the library reticulate must be loaded or the py object will not be recognized.
+
+```{r, eval=FALSE}
+library(reticulate)
+batting <- py$df
+```
+
+The home run rate this season is higher than it has ever been in [MLB history](https://www.baseball-reference.com/leagues/MLB/bat.shtml). We can create a visualization of the HR rate per plate appearance over the last 10 seasons.
+
+```{r, eval=FALSE}
+hr_rate <- batting %>% 
+  group_by(year) %>% 
+  summarise(
+    HR = sum(HR),
+    PA = sum(PA),
+    HR_PA = HR / PA
+)
+
+ggplot(hr_rate, aes(year, HR_PA)) +
+  geom_line(color = "#00369C") +
+  labs(title = "MLB HR Per Plate Appearance",
+       subtitle = "2010 - 2019", 
+       y = "HR per PA") +
+  scale_x_continuous(breaks = 2010:2019) +
+  theme(axis.title.x = element_blank())
+```
+
+
+```{r, echo=FALSE, fig.width=8}
+batting <- read_csv("~/Documents/data/baseballref_batting_data_2010_2019.csv")
+
+hr_rate <- batting %>% 
+  group_by(year) %>% 
+  summarise(
+    HR = sum(HR),
+    PA = sum(PA),
+    HR_PA = HR / PA
+)
+
+ggplot(hr_rate, aes(year, HR_PA)) +
+  geom_line(color = "#00369C") +
+  labs(title = "MLB HR Per Plate Appearance",
+       subtitle = "2010 - 2019", 
+       y = "HR per PA") +
+  scale_x_continuous(breaks = 2010:2019) +
+  theme_mdgr() +
+  theme(axis.title.x = element_blank())
+```
+
+We can then call the summarized data in python to plot the same thing using matplotlib.
+
+```{python, fig.width=8}
+import matplotlib.pyplot as plt
+df = r.hr_rate
+
+df.plot(kind="line",x="year",y="HR_PA")
+plt.title("MLB HR Per Plate Appearance", loc="left")
+plt.title("2010 - 2019", loc="right")
+
+```

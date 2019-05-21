@@ -1,0 +1,64 @@
+---
+title: 'Using Python in RStudio to Visualize MLB Home Run Rates'
+author: Michael Groesbeck
+date: '2019-05-20'
+slug: using-python-in-rstudio
+categories: []
+tags:
+  - python
+  - pipenv
+  - rstats
+  - r
+  - baseball
+  - mlb
+description: 'A quick visualization of HR rates in Major League Baseball from 2010 - 2019. Details how to setup RStudio to use Python and saved virtual python environments.'
+---
+
+
+
+<p>RStudio version 1.2 comes with built in support for python using the <a href="https://rstudio.github.io/reticulate/">reticulate package</a>. This is a quick write up of my set up process in Ubuntu, as well as a simple visualization of MLB batting data using R and Python in the same notebook.</p>
+<div id="setting-up-the-virtual-environment" class="section level2">
+<h2>Setting up the virtual environment</h2>
+<p>I have been using <a href="https://pipenv.readthedocs.io/en/latest/#">Pipenv</a> for managing my python packages and virtual environments, and the <a href="https://rstudio.github.io/reticulate/articles/python_packages.html">reticulate documentation</a> includes instructions on how to use previously save environments within RStudio. The <code>reticulate::virtualenv_list()</code> lists all virtual environments saved in a specific location. By default, it looks in <code>~/.virtualenvs</code>, but this behavior can be changed by defining the system environment variable <code>WORKON_HOME</code> as any other file location. In Ubuntu, I found the easiest way to do this was adding the variable to my /etc/environment file, then logging out and back in. Once I did this, running the <code>reticulate::virtualenv_list()</code> command displayed my saved environments. I then specified which to use with the function <code>reticulate::use_virtualenv()</code>. After this, I could now import the various python packages installed in that environment. And if I need to install additional packages, I can use the Terminal pane and quickly install packages with pipenv.</p>
+</div>
+<div id="using-python" class="section level2">
+<h2>Using Python</h2>
+<p>With the environment setup, we can now use the <a href="https://github.com/jldbc/pybaseball">pybaseball package</a> to pull 10 seasons of batting data from <a href="https://www.baseball-reference.com/">baseball-reference.com</a>.</p>
+<pre class="python"><code>import pandas as pd
+from pybaseball import batting_stats_bref
+
+def get_batting(year):
+    df = batting_stats_bref(year)
+    df[&#39;year&#39;] = year
+    return df
+
+df = pd.concat([get_batting(year) for year in range(2010, 2020)], ignore_index=True)</code></pre>
+<p>We can then reference the data in R with the following code. Note, the library reticulate must be loaded or the py object will not be recognized.</p>
+<pre class="r"><code>library(reticulate)
+batting &lt;- py$df</code></pre>
+<p>The home run rate this season is higher than it has ever been in <a href="https://www.baseball-reference.com/leagues/MLB/bat.shtml">MLB history</a>. We can create a visualization of the HR rate per plate appearance over the last 10 seasons.</p>
+<pre class="r"><code>hr_rate &lt;- batting %&gt;% 
+  group_by(year) %&gt;% 
+  summarise(
+    HR = sum(HR),
+    PA = sum(PA),
+    HR_PA = HR / PA
+)
+
+ggplot(hr_rate, aes(year, HR_PA)) +
+  geom_line(color = &quot;#00369C&quot;) +
+  labs(title = &quot;MLB HR Per Plate Appearance&quot;,
+       subtitle = &quot;2010 - 2019&quot;, 
+       y = &quot;HR per PA&quot;) +
+  scale_x_continuous(breaks = 2010:2019) +
+  theme(axis.title.x = element_blank())</code></pre>
+<p><img src="/posts/2019-05-18-using-python-in-rstudio_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
+<p>We can then call the summarized data in python to plot the same thing using matplotlib.</p>
+<pre class="python"><code>import matplotlib.pyplot as plt
+df = r.hr_rate
+
+df.plot(kind=&quot;line&quot;,x=&quot;year&quot;,y=&quot;HR_PA&quot;)
+plt.title(&quot;MLB HR Per Plate Appearance&quot;, loc=&quot;left&quot;)
+plt.title(&quot;2010 - 2019&quot;, loc=&quot;right&quot;)</code></pre>
+<p><img src="/posts/2019-05-18-using-python-in-rstudio_files/figure-html/unnamed-chunk-5-1.png" width="768" /></p>
+</div>
