@@ -5,12 +5,10 @@ date = "2019-05-16"
 
 ## Work Experience
 
-**Data Consultant**,
-Contracting through [Signature Consultants](https://www.sigconsult.com/) at [Bank of America](https://www.bankofamerica.com/)  
+**Senior Data Analyst**, [Bank of America](https://www.bankofamerica.com/)  
 June 2018 - Present
 
 - Member of cross product initiatives team within Treasury Data Management
-- Working knowledge of the large scope of data within SALM
 - Identified key business elements within data warehouse and managed controls to ensure data accuracy
 - Coordinated business partners' needs with technology team to develop optimal solutions 
 - Automated various BAU reports using Oracle SQL tools 
