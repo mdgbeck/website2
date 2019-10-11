@@ -14,7 +14,7 @@ disqusShortname = "mdgbeck-netlify-com"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
-  logofile = "img/head_shot.jpg"
+  logofile = "img/logo.jpg"
 	subtitle = "Michael Groesbeck's website"
 	# Number of posts to show in recent posts list.
 	recentPostsCount = 10
