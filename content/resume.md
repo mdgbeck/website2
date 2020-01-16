@@ -1,6 +1,6 @@
 +++
 title = "Resume"
-date = "2019-05-16"
+date = "2020-01-15"
 +++
 
 ## Work Experience
@@ -8,19 +8,22 @@ date = "2019-05-16"
 **Senior Data Analyst**, [Bank of America](https://www.bankofamerica.com/)  
 June 2018 - Present
 
-- Member of cross product initiatives team within Treasury Data Management
-- Identified key business elements within data warehouse and managed controls to ensure data accuracy
-- Coordinated business partners' needs with technology team to develop optimal solutions 
-- Automated various BAU reports using Oracle SQL tools 
+- Team lead for Treasury Products team within Treasury Data Management
+- Help maintain accurate and complete databases by improving data sourcing and implementing data quality controls
+- Use SQL to investigate potential data gaps and determine optimal solutions
+- Assist in reduction of risk through automation of scheduled reports using Oracle Sql tools
+- Coordinate business partners’ data needs with technology team and assist in delivery of necessary data attributes
+- Work with international teams to ensure compliance with financial regulations across multiple
+countries of operation
 
 **Head of Reporting and Analytics**, [ActiveCare](https://www.activecare.com/)  
 June 2016 - June 2018
   
   - Managed small team in charge of company reports, dashboard, and various data projects
+  - Led team in creation of projects and plans to help company meet objectives
   - Created and presented business intelligence analyses for company management
   - Ran internal research on medical and pharmacy claims using statistical modeling / machine learning
-  - Built automated reports with SSRS 
-  - One of companies SalesForce administrators
+  - Built automated customer reports using the Microsoft SQL Server tool suite
 
 **Statistician / Data Analyst** [Brigham Young University Harold B. Lee Library](https://lib.byu.edu/)  
 April 2015 - June 2016
