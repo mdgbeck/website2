@@ -5,7 +5,7 @@ date = "2019-05-15"
 
 ## About Me
 
-I am currently working as a data analyst for Bank of America as part of their treasury data management team. Prior to that, I worked at [ActiveCare](https://www.activecare.com/), where I led the Reporting and Analytics team. My work has mainly consisted of using SQL and R to prepare and automate reports and various analyses. 
+I am currently working as a data analyst for Bank of America as part of their treasury data management team. Prior to that, I worked at ActiveCare, where I led the Reporting and Analytics team. My work has mainly consisted of using SQL and R to prepare and automate reports and various analyses. 
 
 I received a Bachelor's of Science in Statistics from Brigham Young University in April 2016. While I was a student there, I worked as a research assistant where I co-authored two papers about academic librarians.
 
@@ -17,8 +17,7 @@ I received a Bachelor's of Science in Statistics from Brigham Young University i
 
 ## Website
 
-This site is built with Hugo, and uses a customized version [Ezhil theme.] 
-(https://github.com/vividvilla/ezhil)
+This site is built with Hugo, and uses a customized version [Ezhil theme.](https://github.com/vividvilla/ezhil)
 I created and manage the site using the R package [`blogdown`](https://bookdown.org/yihui/blogdown/).
 
 All the posts, and files for the website can be found in my [website repo](https://github.com/mdgbeck/website2) on GitHub.
