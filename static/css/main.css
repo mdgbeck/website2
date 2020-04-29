@@ -1,83 +1,96 @@
+
+
 body {
-    font-family: "ubuntu", sans-serif;
-    font-weight: 300;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 300;
 	color: #333;
 	line-height: 1.6;
 	font-size: 16px;
 }
 
-a, a:hover {
-    color: #a00;
-    text-decoration: none;
+a,
+a:hover {
+  color: #2b6a87;
+  text-decoration: none
 }
 
-html,button,input,select,textarea {
+a:hover {
+  text-decoration: underline
+}
+
+html,
+button,
+input,
+select,
+textarea {
     color: #222
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none
+  background: #b3d4fc;
+  text-shadow: none
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none
+  background: #b3d4fc;
+  text-shadow: none
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1rem 0;
-    padding: 0
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1rem 0;
+  padding: 0
 }
 
-audio,canvas,img,video {
-    width: 100%;
-    vertical-align: middle
+audio,
+canvas,
+img,
+video {
+  width: 100%;
+  vertical-align: middle
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0
+  border: 0;
+  margin: 0;
+  padding: 0
 }
 
 textarea {
-    resize: vertical
+  resize: vertical
 }
 
 blockquote {
-    margin-left: 1rem;
-    font-style: italic;
-    font-size: 1.4rem;
-    font-family: Georgia,bitstream charter,serif;
-    border-left: 3px solid;
-    border-color: #a00;
-    padding-left: 20px
+  margin-left: 1rem;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-family: Georgia,bitstream charter,serif;
+  border-left: 3px solid;
+  border-color: #a00;
+  padding-left: 20px
 }
 
-blockquote cite {
-    font-size: 70%;
-    opacity: .8
+blockquote cite {,
+  font-size: 70%;
+  opacity: .8
 }
 
-a,a:hover {
-    color: #a00;
-    text-decoration: none
-}
 
-a:hover {
-    text-decoration: underline
-}
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: raleway,sans-serif;
-    line-height: 1.2;
-    color: #333;
-    font-weight: 100
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: raleway, sans-serif;
+  line-height: 1.2;
+  color: #333;
+  font-weight: 100
 }
 
 h1 {
