@@ -2,7 +2,7 @@ baseURL = "https://mdgbeck.com/"
 languageCode = "en-us"
 title = "mdgbeck.com"
 theme = "ezhil"
-
+paginate = 5
 
 pygmentsstyle = "vs"
 pygmentscodefences = true
@@ -31,7 +31,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 
 [permalinks]
-  posts = "/post/:slug/"
+  posts = "/posts/:slug/"
 
 [[menu.main]]
 name = "Home"
