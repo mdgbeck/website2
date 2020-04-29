@@ -17,9 +17,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   logofile = "img/head_shot.jpg"
 	subtitle = "Michael Groesbeck's website"
 	# Number of posts to show in recent posts list.
-	recentPostsCount = 10
+	# recentPostsCount = 10
 	# Content types which are excluded from recent posts and archive page.
-	excludedTypes = ["page"]
+	# excludedTypes = ["page"]
 	disableDisqusTypes = ["page"]
 	featherIconsCDN = true
 	highlightjs = true
