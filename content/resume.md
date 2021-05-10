@@ -20,7 +20,7 @@ countries of operation
 October 2019 - Present
 
   - Part-time data science consulting for two healthcare companies
-  - Improved and maintain ETL processing of medical records using Microsoft SQL Server tool suite
+  - Maintain ETL processing of medical records using Microsoft SQL Server tool suite
   - Perform medical phenotyping using algorithms in R
   - Model future insurance costs using machine learning in python and R.
 
@@ -47,7 +47,7 @@ April 2015 - June 2016
 *Master's in Analytics (Computational Data Analytics Track)*
 
   - **Expected Graduation:** August 2022
-  - **Relevant Courses:** Big Data Analytics in Healthcare, Machine Learning / Computational Data Analytics, Computing For Data Analytics, Analytics Modeling, 
+  - **Relevant Courses:** Big Data Analytics in Healthcare, Machine Learning / Computational Data Analytics, Computing For Data Analytics, Analytics Modeling   
 
 **Brigham Young University**  
 *Bachelor of Science in Statistics*
