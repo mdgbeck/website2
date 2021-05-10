@@ -7,7 +7,7 @@ date = "2019-05-15"
 
 I am currently working as a data analyst for Bank of America as part of their treasury data management team. Prior to that, I worked at ActiveCare, where I led the Reporting and Analytics team. My work has mainly consisted of using SQL and R to prepare and automate reports and various analyses. 
 
-I received a Bachelor's of Science in Statistics from Brigham Young University in April 2016. While I was a student there, I worked as a research assistant where I co-authored two papers about academic librarians.
+I began began Georgia Tech's online Master's in Analytics degree in 2020 to continue learning about data science techniques with an expected graduation in August 2022. I received a Bachelor's of Science in Statistics from Brigham Young University in April 2016. While I was a student there, I worked as a research assistant where I co-authored two papers about academic librarians.
 
 ## Publications
 
@@ -26,13 +26,4 @@ Posts are released under [Creative Commons Attribution-ShareAlike 4.0 Internatio
 
 ## Other
 
-My interests include data analytics, photography, basketball, and soccer. I currently live in Charlotte, NC with my wife, daughter, and our two dogs.
-
-<img src="/img/about/theo.jpg" alt="Theo" width="600">
-
-Theo - Dutch Shepherd mix
-
-
-<img src="/img/about/bear.jpg" alt="Bear" width="600">
-
-Bear - Belgian Malinois
+My interests include data analytics and playing sports and music. I currently live in Charlotte, NC with my wife, daughter, and our two dogs.
